@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meny</title>
+    <link rel="stylesheet" href="styles/style.css">
+            <!-- FONTS -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="precodocument.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            " href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+        
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Caslon+Display&family=Viaoda+Libre&display=swap" rel="stylesheet">
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Caslon+Display&family=Monsieur+La+Doulaise&family=Viaoda+Libre&display=swap" rel="stylesheet">
+        
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Caslon+Display&family=Monsieur+La+Doulaise&family=Rochester&family=Viaoda+Libre&display=swap" rel="stylesheet">
+            <!-------->
+</head>
+<body>
+    <button onclick="showSidebar()" class="menu-opener"><img width="30px" src="media/menu-icon-closed.svg" alt="menu-opener"></button>
+    <!-- main-sida Början-->
+    <section class="page-section" id="meny">
+      <!-- NavBar!-->
+       <nav>
+        <label onclick="closeSidebar()" class="overlay"></label>
+        <ul class="sidebar">
+            <li><button onclick="closeSidebar()" class="menu-closer"><img src="media/menu-icon-opened.svg" alt="" width="40px"></a></li>
+            <li><a onclick="closeSidebar()" href="index.html#main-page">Om oss</a></li>
+            <li><a onclick="closeSidebar()" href="index.html#schedule">Detaljer</a></li>
+            <li><a onclick="closeSidebar()" href="#contact">klädkod</a></li>
+            <li><a onclick="closeSidebar()" href="#contact">Bordsplacering</a></li>
+            <li><a onclick="closeSidebar()" href="meny.html">Meny</a></li>
+            <li><a onclick="closeSidebar()" href="weddingparty.html">Register</a></li>
+        </ul>
+            <ul class="pc-sidebar">
+                <li><a href="#our-history">Om oss</a></li>
+                <li><a href="#schedule">Detaljer</a></li>
+                <li><a href="#contact">klädkod</a></li>
+                <li><a href="#contact">Bordsplacering</a></li>
+                <li><a href="meny.html">Meny</a></li>
+                <li><a href="weddingparty.html">Register</a></li>
+            </ul>
+        </nav> 
+        
+            
+        <header>
+            <h1 class="spaced-h1">-Meny-</h1>
+        </header>
+        
+        <main>
+            <img src="media/flower01.svg" alt="illustration av blomma">
+            
+            <article>
+                <h2>Förätt:</h2>
+                <p>Räk- och kräftbakelse på örtslungad salladsmix toppad med cheddarflarn, tångkaviar och färsk dill</p>
+            </article>
+            <hr>
+            <article>
+                <h2>Varmrätt:</h2>
+                <p>Kalvfilé med portvin- och vinbärssås, pumpapuré, friterad svartkål och grillad rödlök <br>
+                eller <br>
+                Rimmad ugnsbakad torskrygg med brynt smör, kastanjechampinjoner, pepparrot, räkor och kapris
+                </p>
+            </article>
+            <hr>
+            <article>
+                <h2>Dessert:</h2>
+                <p>Daimcheesecake med hallon- och myntakompott serveras med krossade nötter och maränger</p>
+            </article>
+            <hr>
+        </main>
+
+        <!--Script-->
+        <script src="script.js"></script>
+</body>
+</html>

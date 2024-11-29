@@ -176,7 +176,7 @@ h2 {
   text-align: center;
 }
 
-#main-page > header > h1 {
+#main-page > header > h1, #meny > header h1 {
   margin: 0;
   font-size: 2.5em;
   text-align: center;
@@ -354,7 +354,7 @@ header{
   border: 3px solid var(--accent-color3);
 }
 
-#wedding-party > main {
+#wedding-party > main, #meny > main{
   margin-top: 0.5em;
   background-color: var(--accent-color2);
   width: 100vw;
@@ -431,3 +431,15 @@ transform: rotateZ(20deg);
   top: 120vw;
   transform: rotateZ(-50deg);
 }
+/* Meny */
+.spaced-h1{
+  letter-spacing: 0.47em;
+  color:var(--text-color-two)
+}
+#meny > header{
+  padding:3vh;
+}
+#meny > main > img{
+  rotate:30deg;
+}
+
