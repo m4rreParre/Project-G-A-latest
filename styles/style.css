@@ -354,7 +354,7 @@ header{
   border: 3px solid var(--accent-color3);
 }
 
-#wedding-party > main, #meny > main{
+#wedding-party > main{
   margin-top: 0.5em;
   background-color: var(--accent-color2);
   width: 100vw;
@@ -438,8 +438,44 @@ transform: rotateZ(20deg);
 }
 #meny > header{
   padding:3vh;
+  height: 25vw;
 }
 #meny > main > img{
   rotate:30deg;
+  width: 90%;
+  max-width: 400px;
 }
-
+#meny > main > article> h2{
+  color: var(--text-color-four);
+  text-align: start;
+  padding-bottom: 5%;
+}
+#meny > main > article> p{
+  font-size: 1.7em;
+  text-align:start;
+  margin-top: -0.5em;
+}
+#meny > main {
+  margin-top: 0.5em;
+  background-color: var(--accent-color2);
+  width: 100vw;
+  height: 250%;
+  position: relative;
+  overflow: hidden;
+}
+#meny > main > article{
+  padding: 8% 5% 8% 5%;
+}
+#meny > main > hr{
+  color: #B8B8B8;
+  width: 90vw;
+  margin: auto;
+  height: 2px;
+}
+#meny > main > article:last-child h2{
+  text-align: center;
+}
+#meny > main > article:last-child a{
+  color: var(--text-color-four);
+  font-size: 0.65em;
+}
