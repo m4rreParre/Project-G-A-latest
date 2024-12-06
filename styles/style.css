@@ -438,13 +438,45 @@ transform: rotateZ(20deg);
 }
 #meny > header{
   padding:3vh;
+  padding-top: 8vw;
   height: 25vw;
+}
+#meny > main > hr{
+  color: #B8B8B8;
+  width: 90vw;
+  margin: auto;
+  height: 2px;
 }
 #meny > main > img{
   rotate:30deg;
   width: 90%;
   max-width: 400px;
 }
+@media screen and (min-width: 600px){
+  #meny > header{
+    padding: 8vw 2vh 8vh 20vh;
+    height: 25vw;
+    margin-top: 1vw;
+  }
+  #meny > header > h1{
+    font-size: 5em;
+  }
+  #meny > header > p{
+    
+  }
+  #meny > main{
+    padding: 0 40vh 0 65vh;
+  }
+  #meny > main > hr{
+    display:none;
+  }
+  #meny > main > img{
+    position: absolute;
+    left:0;
+    top: 20vw
+  }
+}
+
 #meny > main > article> h2{
   color: var(--text-color-four);
   text-align: start;
@@ -458,7 +490,6 @@ transform: rotateZ(20deg);
 #meny > main {
   margin-top: 0.5em;
   background-color: var(--accent-color2);
-  width: 100vw;
   height: 250%;
   position: relative;
   overflow: hidden;
@@ -466,16 +497,14 @@ transform: rotateZ(20deg);
 #meny > main > article{
   padding: 8% 5% 8% 5%;
 }
-#meny > main > hr{
-  color: #B8B8B8;
-  width: 90vw;
-  margin: auto;
-  height: 2px;
-}
+
 #meny > main > article:last-child h2{
   text-align: center;
 }
 #meny > main > article:last-child a{
   color: var(--text-color-four);
   font-size: 0.65em;
+}
+#meny > main {
+
 }
