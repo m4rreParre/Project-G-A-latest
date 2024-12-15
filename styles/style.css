@@ -11,10 +11,6 @@
   --accent-color: hsl(36, 13%, 56%);
   --accent-color2: #E2E2E2;
   --accent-color3: #3F3F3F;
-  
-  --fz-1: ;
-  --fz-2: ;
-  --fz-3: ;
 }
 
 * {
@@ -25,10 +21,8 @@
 html{
   scroll-behavior: smooth;
 }
-html, body {
-  overflow-x: hidden;
-}
 body {
+  overflow-x: hidden;
   min-height: 100vh;
 }
 h1,
@@ -465,13 +459,16 @@ transform: rotateZ(20deg);
 
 
 /* Meny */
+#meny > nav{
+  padding-top: 3em;
+}
 .spaced-h1{
   letter-spacing: 0.47em;
   color:var(--text-color-two)
 }
 #meny > header{
   padding:3vh;
-  padding-top: 8vw;
+  padding-top: 7vw;
   height: 25vw;
 }
 #meny > main > hr{
@@ -483,22 +480,28 @@ transform: rotateZ(20deg);
 #meny > main > img{
   rotate:30deg;
   width: 90%;
+  max-width: 550px;
+}
+#meny > main >article {
   max-width: 400px;
+  min-width: 350px;
+}
+#meny > #allegri {
+  margin: 0 ;
+}
+#meny > footer{
+  margin-top: 0;
 }
 @media screen and (min-width: 600px){
   #meny > header{
-    padding: 8vw 2vh 8vh 20vh;
-    height: 25vw;
-    margin-top: 1vw;
+    height: 40vw;
   }
   #meny > header > h1{
     font-size: 5em;
   }
-  #meny > header > p{
-    
-  }
+
   #meny > main{
-    padding: 0 40vh 0 65vh;
+    padding: 0 0 0 45vh;
   }
   #meny > main > hr{
     display:none;
@@ -508,6 +511,38 @@ transform: rotateZ(20deg);
     left:0;
     top: 20vw
   }
+}
+@media screen and (min-width: 1000px){
+  #meny > header{
+    padding: 8vw 2vh 8vh 20vh;
+    height: 25vw;
+  }
+  #meny > main{
+    padding: 0 0 0 70%;
+  }
+  #meny > main > img{
+    position: absolute;
+    left:0;
+    top: 20vw
+  }
+  
+}
+@media screen and (min-width: 1300px){
+  #meny > header{
+    padding: 8vw 2vh 8vh 20vh;
+    height: 20vw;
+  }
+  #meny > main{
+    padding: 0 0 0 60%;
+  }
+
+#meny > main >article {
+  font-size: 1.5em;
+}
+#meny > main > img{
+  left:20vw;
+  top: 20vw;
+}
 }
 
 #meny > main > article> h2{
