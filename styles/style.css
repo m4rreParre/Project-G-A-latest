@@ -690,6 +690,8 @@ transform: rotateZ(20deg);
   font-size: 1.3em;
   text-align: left;
   width: 90vw;
+  font-style: italic;
+  padding-top: 10%;
 }
 #dresscode > main > h2{
   text-decoration: underline;
@@ -700,6 +702,28 @@ transform: rotateZ(20deg);
   width: 80%;
   margin: 0 0 10% 0;
 }
+@media screen and (min-width: 768px) {
+  #dresscode > main > h2 {
+    display : none;
+  }
+  #dresscode > main > img {
+    width: 40%;
+  }
+  #dresscode > main > p {
+    font-size: 2.3em;
+    text-align: left;
+    width: 50vw;
+  }
+  #dresscode > main {
+    height: 70vw;
+  }
+  #dresscode > header > h1{
+    font-size: 5em;
+  }
+  #dresscode > footer{
+    font-size: 1.4em;
+  }
+}
 @media screen and (min-width: 600px){
   #bordsplacering > main > article{
     font-size: 1.6em;
@@ -707,27 +731,24 @@ transform: rotateZ(20deg);
   #bordsplacering > main {
     height: 150vw;
   }
-  #dresscode > main > h2 {
-    display : none;
-  }
 }
 @media screen and (min-width: 850px){
-  #bordsplacering > main > article{
-    font-size: 2.5em;
-    gap: 2vw;
+    #bordsplacering > main > article{
+      font-size: 2.5em;
+      gap: 2vw;
+    }
+    #bordsplacering > header > h1{
+      font-size: 5em; 
+    }
+    #bordsplacering > main {
+      height: 140vw;
+    }
+    #bordsplacering > footer{
+      font-size: 2em;
+    }
+    #bordsplacering > main {
+      flex-wrap: wrap;
+      justify-content: start;
+      height: auto;
+    }
   }
-  #bordsplacering > header > h1{
-    font-size: 5em; 
-  }
-  #bordsplacering > main {
-    height: 140vw;
-  }
-  #bordsplacering > footer{
-    font-size: 2em;
-  }
-  #bordsplacering > main {
-    flex-wrap: wrap;
-    justify-content: start;
-    height: auto;
-  }
-}
