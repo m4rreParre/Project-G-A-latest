@@ -44,6 +44,11 @@ h5 {
   font-family: "Monsieur La Doulaise", cursive;
   font-weight: 400;
   font-style: normal;
+  font-size: 2.5em;
+  text-align: center;
+  margin: 0;
+  margin-top: -0.6em;
+  color: var(--text-color-three);
 }
 
 p {
@@ -218,14 +223,6 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 600px;
-}
-
-h5 {
-  font-size: 2.5em;
-  text-align: center;
-  margin: 0;
-  margin-top: -0.6em;
-  color: var(--text-color-three);
 }
 
 h6 {
@@ -406,7 +403,6 @@ header {
 
 .image-container {
   display: grid;
-  max-width: 3;
   max-width: 50vw;
   object-fit: contain;
   position: absolute;
@@ -522,7 +518,7 @@ header {
 }
 
 #meny>main>img {
-  rotate: 30deg;
+  transform: rotate(30deg);
   width: 90%;
   max-width: 550px;
 }
