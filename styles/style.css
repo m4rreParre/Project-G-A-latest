@@ -73,7 +73,7 @@ nav ul a{
   font-size: 1.4em;
   transition: color 250ms ease,background-size 200ms ease-out;
   background-size: 0 2px, 100% 2px;
-  width: 100%;
+  width: fit-content;
   display: block;
 }
 nav ul a:visited{
