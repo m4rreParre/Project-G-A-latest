@@ -1,7 +1,7 @@
 /* GLOBAL-CSS */
 :root {
   --background-color: #ffffff;
-  --main-text-color: #000000;
+  --main-text-color: #000000; 
   --text-color-one: #ffffff;
   --text-color-two: #505050;
   --text-color-three: hsl(43, 15%, 72%);
@@ -73,7 +73,8 @@ nav ul a{
   font-size: 1.4em;
   transition: color 250ms ease,background-size 200ms ease-out;
   background-size: 0 2px, 100% 2px;
-  
+  width: 100%;
+  display: block;
 }
 nav ul a:visited{
   color: var(--text-color-two);
@@ -639,6 +640,63 @@ transform: rotateZ(20deg);
 #bordsplacering > footer{
   margin: 0;
 }
+/*Klädkod*/
+#dresscode > main > article {
+  color: var(--accent-color3);
+  display: flex;
+  max-width: 40vw;
+  min-width: 40vw;
+  max-height: 40vw;
+  margin: 5%;
+}
+#dresscode > main > article > h2{
+  font-size: 2em;
+  padding: 4%;
+}
+#dresscode > main > article > hr{
+  border: 2px solid var(--accent-color3);
+}
+#dresscode > main {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-evenly;
+  gap:0;
+  height: 172vw;
+  margin-top: 0.5em;
+  background-color: var(--accent-color2);
+  width: 100vw;
+
+  max-width: 100vw;
+}
+#dresscode> header > h1{
+  font-size: 3em;
+  text-align: center;
+  margin-top: -0.7em;
+  margin-bottom: 0.5em;
+  color: var(--accent-color3)
+}
+#dresscode > header > hr{
+  width:18%;
+  margin: auto;
+  border: 3px solid var(--accent-color3);
+}
+#dresscode > nav{
+  padding-top: 3em;
+}
+#dresscode > footer{
+  margin: 0;
+}
+#dresscode > main > p {
+  font-size: 1.3em;
+  text-align: left;
+  width: 90vw;
+}
+#dresscode > main > h2{
+  text-decoration: underline;
+  color: var(--accent-color);
+  height: 10%;
+}
 @media screen and (min-width: 600px){
   #bordsplacering > main > article{
     font-size: 1.6em;
@@ -646,7 +704,9 @@ transform: rotateZ(20deg);
   #bordsplacering > main {
     height: 150vw;
   }
-
+  #dresscode > main > h2 {
+    display : none;
+  }
 }
 @media screen and (min-width: 850px){
   #bordsplacering > main > article{
