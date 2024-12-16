@@ -86,7 +86,7 @@ nav ul a:hover{
   background-position: 0 100%;
   background-repeat: no-repeat;
 }
-/*pc only*/
+
 .pc-sidebar{
   display: none;
 }
@@ -489,7 +489,14 @@ transform: rotateZ(20deg);
 #meny > #allegri {
   margin: 0 ;
 }
+#meny > footer > article > h2 > a {
+  color: var(--text-color-one);
+}
+#meny > footer > article > h2 > a:visited {
+  color: var(--text-color-one);
+}
 #meny > footer{
+  font-size: 0.5em;
   margin-top: 0;
 }
 @media screen and (min-width: 600px){
@@ -499,7 +506,9 @@ transform: rotateZ(20deg);
   #meny > header > h1{
     font-size: 5em;
   }
-
+  #meny > footer{
+    font-size: 1em;
+  }
   #meny > main{
     padding: 0 0 0 45vh;
   }
@@ -525,7 +534,9 @@ transform: rotateZ(20deg);
     left:0;
     top: 20vw
   }
-  
+  #meny > footer{
+    font-size: 1em;
+  }
 }
 @media screen and (min-width: 1300px){
   #meny > header{
@@ -535,16 +546,17 @@ transform: rotateZ(20deg);
   #meny > main{
     padding: 0 0 0 60%;
   }
-
-#meny > main >article {
+  #meny > main >article {
   font-size: 1.5em;
-}
-#meny > main > img{
+  }
+  #meny > main > img{
   left:20vw;
   top: 20vw;
+  }
+#meny > footer{
+  font-size: 1em;
 }
 }
-
 #meny > main > article> h2{
   color: var(--text-color-four);
   text-align: start;
@@ -572,9 +584,6 @@ transform: rotateZ(20deg);
 #meny > main > article:last-child a{
   color: var(--text-color-four);
   font-size: 0.65em;
-}
-#meny > main {
-
 }
 
 /*BordsPlacering*/
@@ -657,6 +666,5 @@ transform: rotateZ(20deg);
     flex-wrap: wrap;
     justify-content: start;
     height: auto;
-  
   }
 }
