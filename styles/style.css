@@ -91,15 +91,11 @@ nav ul a:hover{
 .pc-sidebar{
   display: none;
 }
-
-@media screen and (min-width: 600px){
-  .menu-opener{
-    display: none;
-  }
-  .pc-sidebar{
-    display: block;
-  }
+.wedding-picpc{
+  display: none;
 }
+
+
 
 .sidebar{
   transition: left 0.4s ease-out;
@@ -230,7 +226,7 @@ h6{
 
 #schedule{
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .flower01{
@@ -454,9 +450,6 @@ transform: rotateZ(20deg);
   .image-container > h2{
     font-size: 5em;
   }
-  #wedding-party  > footer {
-    font-size: 2em;    
-  }
 
 }
 
@@ -503,6 +496,15 @@ transform: rotateZ(20deg);
   margin-top: 0;
 }
 @media screen and (min-width: 600px){
+  #schedule > article {
+    font-size: 1.3em;
+  }
+  #schedule > article > h6{
+    font-size: 1.5em;
+  }
+  #schedule h2{
+    font-size: 3em;
+  }
   #meny > header{
     height: 40vw;
   }
@@ -555,6 +557,9 @@ transform: rotateZ(20deg);
   #meny > main > img{
   left:20vw;
   top: 20vw;
+  }
+  #our-history > #historia{
+    font-size: 2em;
   }
 #meny > footer{
   font-size: 1em;
@@ -722,9 +727,6 @@ transform: rotateZ(20deg);
   #dresscode > header > h1{
     font-size: 5em;
   }
-  #dresscode > footer{
-    font-size: 1.4em;
-  }
 }
 @media screen and (min-width: 600px){
   #bordsplacering > main > article{
@@ -734,10 +736,58 @@ transform: rotateZ(20deg);
     height: 150vw;
   }
   #our-history > article > p{
-    font-size: 1.7em;
+    font-size: 2em;
+  }
+  .wedding-pic{
+    display: none;
   }
 }
-@media screen and (min-width: 850px){
+
+  @media screen and (min-width: 600px){
+    .menu-opener{
+      display: none;
+    }
+    .pc-sidebar{
+      display: block;
+    }
+    #main-page > header {
+      font-size: 1.3em;
+    }
+    #main-page > .AG-logo{
+      width: 40%;
+    }
+    .wedding-picpc{
+      display: block;
+      margin-top: -20%;
+      margin-bottom: -9%;
+    }
+    #our-history{
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    #our-history > article:first-child{
+      margin: 2% 0 0 0;
+      font-size: 2em;
+    }
+    #our-history > #historia{
+      font-size: 1.1em;
+    }
+    #wishlist{
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    #wishlist > article{
+      margin: 2% 0;
+      font-size: 2em;
+    }
+    footer {
+      font-size: 30px;
+    }
+  }
+  @media screen and (min-width: 850px){
     #bordsplacering > main > article{
       font-size: 2.5em;
       gap: 2vw;
@@ -748,12 +798,18 @@ transform: rotateZ(20deg);
     #bordsplacering > main {
       height: 140vw;
     }
-    #bordsplacering > footer{
-      font-size: 2em;
-    }
     #bordsplacering > main {
       flex-wrap: wrap;
       justify-content: start;
       height: auto;
+    }
+        #main-page > header {
+      font-size: 2em;
+    }
+    #main-page > .AG-logo{
+      width: 20%;
+    }
+    #our-history > #historia{
+      font-size: 1em;
     }
   }
